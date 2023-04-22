@@ -71,7 +71,7 @@ main ul li a:hover{
     font-size: 1.1rem;
 }
 
-.column-ten{
+div.column-ten{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
