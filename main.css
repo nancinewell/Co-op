@@ -24,6 +24,7 @@ nav ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 0;
     margin: 0;
+    height: 1.5rem;
 }
 
 nav ul li{
@@ -56,6 +57,7 @@ iframe{
 main ul li{
     list-style: none;
     padding: .5rem;
+    height: 1.5rem;
 }
 
 main ul li a{
@@ -74,4 +76,13 @@ main ul li a:hover{
 div.column-ten{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+/* * * * * * * * * * * * * * * * Under Construction * * * * * * * * * * * * * * * */
+div.construction{
+    display: flex;
+}
+
+img.construction{
+    margin: auto;
+    max-width: 90vw;
 }
