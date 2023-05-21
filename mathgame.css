@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,600&display=swap');
+
+.hidden {
+    display: none;
+}
+
+#start {
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    padding: 2rem;
+    margin: auto;
+}
+
+.game_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.game_main h1, .game_main h3{
+    color: #1a73d9;
+    text-align: center;
+}
+
+#equation{
+    display: grid;
+    grid-template-columns: 2rem 2rem;
+    justify-items: center;
+    margin: auto;
+}
+
+#inAnswerLabel{
+    font-size: 1rem;
+}
+
+#inAnswer {
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    width: 4rem;
+}
+
+#check_answer {
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 1rem;
+    width: 6rem;
+    margin-top: 1rem;
+}
+
+#feedback{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    height: 2rem;
+    
+}
+
+.score{
+    margin-top: 5rem;
+}
+
+#score{
+    text-align: center ;
+}
+
+#endgame{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff7f3a;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#again {
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 3rem;
+}

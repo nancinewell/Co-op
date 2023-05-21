@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math</title>
+        <link rel="stylesheet" type="text/css" href="../main.css" /> 
+        <link rel="stylesheet" type="text/css" href="../mathgame.css" /> 
+        
+    </head>
+    <body id="index-body">
+        <header>
+            <h1>Homeschool Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../chemistry.html">Chemistry</a></li>
+                    <li><a href="../geography.html">Geography</a></li>
+                    <li><a href="../spanish.html">Spanish</a></li>
+                    <li><a href="../sotw.html">Story of the World</a></li> 
+                    <li><a href="../writing.html">Creative Writing</a></li>
+                    <li><a href="../math.html">Math</a></li>
+                </ul>
+        </nav>
+        </header>
+        <main class="game_main">
+            <h1>Multiplication Practice: Set B</h1>
+            <button id="start" onclick="start()">START!</button>
+            <div id="game" class="hidden">
+                <div id="feedback"></div>
+                <div id="equation">
+                    <div></div><div id="num1"></div>
+                    <div>x</div><div id="num2"></div>
+                </div>
+                <label id="inAnswerLabel" for="inAnswer">Your Answer:</label><br>
+                <input type="number" id="inAnswer" name="inAnswer"><br>
+            
+                <button id="check_answer" onclick="checkAnswer()">Check!</button>
+                <div class="score">
+                    <h3 >SCORE</h3>
+                    <div id="score"></div>
+                </div>
+            </div>
+            <div id="endgame" class="hidden">
+                Your Score: <span id="endscore"></span>%
+                <br>
+                Your Time: <span id="endtime"></span> sec
+                <br>
+                <button id="again" onclick="start()">AGAIN!</button>
+            </div>
+              
+        </main>
+        <script src="../js/setb.js"></script>
+    </body>
+</html>
