@@ -7,6 +7,16 @@ var endTime;
 var totalTime;
 var startLength;
 
+(function () {
+  var inputText = document.getElementById("inAnswer");
+  inputText.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      document.getElementById("check_answer").click();
+    }
+  });
+})();
+
 function start() {
   //hide endgame, show game, hide start, reset feedback
   document.getElementById("endgame").className = "hidden";
@@ -24,13 +34,6 @@ function start() {
   setProblem();
   var date = new Date();
   startTime = date.getTime();
-  var inputText = document.getElementById("inAnswer");
-  inputText.addEventListener("keyup", function (event) {
-    if (event.keyCode === 13) {
-      event.preventDefault();
-      document.getElementById("check_answer").click();
-    }
-  });
 }
 
 function checkAnswer() {
@@ -72,7 +75,7 @@ function setProblem() {
 
     document.getElementById("endgame").className = ""; //display time and score
 
-    document.getElementById("endscore").innerHTML = scorePercent;
+    document.getElementById("endscore").innerHTML = Math.round(scorePercent);
     document.getElementById("endtime").innerHTML = totalTime;
   } else {
     //get random index and set it to variables, then remove that index

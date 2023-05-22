@@ -7,6 +7,16 @@ var endTime;
 var totalTime;
 var startLength;
 
+(function () {
+  var inputText = document.getElementById("inAnswer");
+  inputText.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      document.getElementById("check_answer").click();
+    }
+  });
+})();
+
 function start() {
   //hide endgame, show game, hide start, reset feedback
   document.getElementById("endgame").className = "hidden";
@@ -22,15 +32,7 @@ function start() {
 
   setProblem();
   var date = new Date();
-  startTime = date.getTime(); //set event listener on enter keyup
-
-  var inputText = document.getElementById("inAnswer");
-  inputText.addEventListener("keyup", function (event) {
-    if (event.keyCode === 13) {
-      event.preventDefault();
-      document.getElementById("check_answer").click();
-    }
-  });
+  startTime = date.getTime();
 }
 
 function checkAnswer() {

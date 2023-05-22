@@ -5,7 +5,15 @@ let endTime;
 let totalTime;
 let startLength;
 
-
+(function () {
+    var inputText = document.getElementById("inAnswer");
+    inputText.addEventListener("keyup", function(event) {
+       if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("check_answer").click();
+       }
+    });
+})()
 
 function start(){
     //hide endgame, show game, hide start, reset feedback
@@ -26,14 +34,6 @@ function start(){
     let date = new Date();
     startTime = date.getTime();
 
-    //set event listener on enter keyup
-    let inputText = document.getElementById("inAnswer");
-    inputText.addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
-            event.preventDefault();
-            document.getElementById("check_answer").click();
-        }
-    });
 }
 
 function checkAnswer(){
