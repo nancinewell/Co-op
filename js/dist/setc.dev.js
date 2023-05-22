@@ -23,6 +23,13 @@ function start() {
   setProblem();
   var date = new Date();
   startTime = date.getTime();
+  var inputText = document.getElementById("inAnswer");
+  inputText.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      document.getElementById("check_answer").click();
+    }
+  });
 }
 
 function checkAnswer() {
@@ -44,7 +51,7 @@ function checkAnswer() {
     document.getElementById("score").innerHTML = score;
   } else {
     //if incorrect, say so.
-    document.getElementById("feedback").innerHTML = "Incorrect. <br>" + num1 + " x " + num2 + " = " + answer;
+    document.getElementById("feedback").innerHTML = parsedAnswer + " is incorrect. <br>" + num1 + " x " + num2 + " = " + answer;
   }
 
   setProblem();
@@ -76,5 +83,6 @@ function setProblem() {
     document.getElementById("num1").innerHTML = num1;
     document.getElementById("num2").innerHTML = num2;
     document.getElementById("inAnswer").value = "";
+    document.getElementById("inAnswer").focus();
   }
 }

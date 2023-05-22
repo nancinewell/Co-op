@@ -16,6 +16,7 @@ function start(){
     
     //reset score to 0;
     document.getElementById("score").innerHTML = "0";
+    score = 0;
 
     //reset setB
     setB = [[3,9],[4,4],[8,10],[4,5],[3,7],[5,9],[4,2],[7,3],[5,8],[9,4],[7,4],[5,4],[8,5],[7,8],[4,9],[9,5],[4,7],[8,7],[5,1],[9,3],[7,4],[3,7],[5,8],[7,8],[9,5],[4,9],[8,5],[8,0]];
@@ -25,6 +26,14 @@ function start(){
     setProblem();
     let date = new Date();
     startTime = date.getTime();
+
+    var inputText = document.getElementById("inAnswer");
+        inputText.addEventListener("keyup", function(event) {
+           if (event.keyCode === 13) {
+              event.preventDefault();
+              document.getElementById("check_answer").click();
+           }
+        });
 }
 
 function checkAnswer(){
@@ -50,7 +59,7 @@ function checkAnswer(){
         document.getElementById("score").innerHTML = score;
     } else {
         //if incorrect, say so.
-        document.getElementById("feedback").innerHTML = "Incorrect. <br>"+num1+" x "+num2+" = "+answer;
+        document.getElementById("feedback").innerHTML = parsedAnswer+" is incorrect. <br>"+num1+" x "+num2+" = "+answer;
     }
 
     setProblem();
@@ -85,6 +94,7 @@ function setProblem(){
         document.getElementById("num1").innerHTML = num1;
         document.getElementById("num2").innerHTML = num2; 
         document.getElementById("inAnswer").value = "";
+        document.getElementById("inAnswer").focus();
     }
 }
 
