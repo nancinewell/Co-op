@@ -54,7 +54,7 @@
 }
 
 #feedback{
-    margin-bottom: 2rem;
+    padding-bottom: 4rem;
     font-size: 1.5rem;
     height: 2rem;
     
@@ -66,6 +66,7 @@
 
 #score{
     text-align: center ;
+    w
 }
 
 #endgame{
