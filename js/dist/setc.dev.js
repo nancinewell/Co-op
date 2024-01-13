@@ -24,7 +24,8 @@ function start() {
   document.getElementById("start").className = "hidden";
   document.getElementById("feedback").innerHTML = ""; //reset score to 0;
 
-  document.getElementById("score").innerHTML = "0"; //reset setC
+  document.getElementById("score").innerHTML = "0";
+  score = 0; //reset setC
 
   setC = [[5, 6], [6, 5], [6, 3], [3, 6], [5, 7], [7, 5], [7, 6], [6, 7], [8, 3], [3, 8], [7, 9], [9, 7], [9, 6], [6, 9], [8, 6], [6, 8], [7, 7], [8, 9], [9, 8], [6, 9], [9, 6], [9, 7], [6, 9], [5, 6], [7, 7], [6, 8], [7, 6], [8, 9]]; // setC = [[1,3],[10,8]];
 
