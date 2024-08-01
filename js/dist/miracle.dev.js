@@ -5,3 +5,9 @@ function miracle() {
   var random = Math.floor(Math.random() * (set.length - 1));
   document.getElementById("random").innerHTML = set[random];
 }
+
+function randomEvent() {
+  var set = ["Costume Party! A party without costumes just isn't a party! Everyone must wear a distinctive accessory.", "Dance Party! You get 1 minute to dance your pants off! (Please don't really take your pants off!)", "You had a great night's sleep! You're energized for the day. Receive 2 mana.", "You had a nightmare! You didn't get good sleep because of it. Lose 1 mana.", "You're practicing your courtly manners for the king's visit. Call everyone Milord and Milady for the rest of class.", "Gift of the game master! The teacher gives a surprise to all players!", "The sky is the limit! ...Unless you're playing indoors. Everyone has 30 seconds to make a paper airplane. The furthest to fly wins!"];
+  var random = Math.floor(Math.random() * (set.length - 1));
+  document.getElementById("random_event").innerHTML = set[random];
+}
