@@ -3,14 +3,21 @@ function miracle(){
     "Each team member receives 300XP",
     "Each team member receives 50GP	",
     "The team can take a 10 minute fun break.",
-    "Each team member gains 1 crystal.",
+    "Each team member gains 1SP.",
     "Each team member receives 100XP",
     "Each team member receives 200GP",
     "Each team member receives 25GP",
     "Each team member receives 75GP",
     "Each team member receives 100GP",
-    "Each team member gains 2 crystals.",
+    "Each team member gains 2SP.",
+    "Each team member can have a piece of fruit for a snack.",
     "The team can take a 5 minute fun break.",
+    "The team can take a 5 minute reading break.",
+    "The team can take a 10 minute reading break.",
+    "The team can take a 15 minute reading break.",
+    "The team can take a 5 minute outside break.",
+    "The team can take a 10 minute outside break.",
+    "The team can take a 15 minute outside break.",
     "The team can take a 15 minute fun break."
     ]
 
