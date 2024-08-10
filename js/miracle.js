@@ -1,14 +1,16 @@
 function miracle(){
-    let set = ["The teacher gives each team member a treat.",
-    "Each team member receives 300XP",
-    "Each team member receives 50GP	",
-    "The team can take a 10 minute fun break.",
-    "Each team member gains 1SP.",
+    let set = [
+    "The teacher gives each team member a treat.",
     "Each team member receives 100XP",
-    "Each team member receives 200GP",
+    "Each team member receives 150XP",
+    "Each team member receives 200XP",
+    "Each team member receives 300XP",
     "Each team member receives 25GP",
+    "Each team member receives 50GP	",
     "Each team member receives 75GP",
     "Each team member receives 100GP",
+    "Each team member receives 200GP",
+    "Each team member gains 1SP.",
     "Each team member gains 2SP.",
     "Each team member can have a piece of fruit for a snack.",
     "The team can take a 5 minute fun break.",
@@ -18,6 +20,7 @@ function miracle(){
     "The team can take a 5 minute outside break.",
     "The team can take a 10 minute outside break.",
     "The team can take a 15 minute outside break.",
+    "The team can take a 10 minute fun break.",
     "The team can take a 15 minute fun break."
     ]
 
@@ -79,7 +82,18 @@ function randomEvent(){
         "You are under attack! A monster snuck up on you and caught you unaware. This team must fight it off! The team with the least XP gains 25 GP. Everyone gains 1 SP.",
         "You can't resist the wave! For the remainder of class, every time the teacher says the word 'no,' everyone must do the wave and gain 25 GP. Everyone gains 1 SP.",
         "Who's a little teapot? You! You's a little teapot! One random team gains 200 XP for singing 'I'm a Little Teapot' with the motion! Everyone gains 1 SP.",
-        "A wizard's apparition appears to grant one player a wish! One random player may receive 3 HP, 1 SP, 25 GP, or 50 XP. Everyone gains 1 SP."        
+        "A wizard's apparition appears to grant one player a wish! One random player may receive 3 HP, 1 SP, 25 GP, or 50 XP. Everyone gains 1 SP.",
+        "The pets have been cursed! Pet abilities cannot be used in battles today.",
+        "Pet abilities that can be used once per day are doubly effective today! They can be used twice!",
+        "Day of Service! Whenever you perform an act of service today, you receive 10 GP.",
+        "A witch has cursed the weapons! Weapons cannot be used in battle today!",
+        "An evil warlock has cursed the armor! Armor cannot be used in battle today!",
+        "The pets were all transformed into toads by an enchantress. Toads have no abilities. The spell will wear off by tomorrow.",
+        "Every time you spend gold today, you lose 1 HP.",
+        "Every time you spend SP today, you lose 10 GP.",
+        "Arena! Two players are summoned to the Thumb War Arena to duel! Winner receives 50 XP and 25 GP.",
+        "A Carnival comes to town! One random player, roll a D6. 1: Lose 1HP. 2: Lose 10GP 3: Nothing. 4: Gain 10 GP. 5: Gain 1 HP. 6: Gain 1 SP",
+        "You stumble upon a City of Shadows. One random player roll a D6 on behalf of the class. 1: You are attacked by a Vampire Prince. -2HP per player. 2: You are turned into toads. You cannot use skills today. 3: Gain 1 HP Each. 4: Gain 20 XP each. 5: Gain 20 GP each. 6: Perform a miracle."
     ];
 
     let random = Math.floor(Math.random()*(set.length-1));
