@@ -12,6 +12,7 @@ function miracle(){
     "Each team member receives 200GP",
     "Each team member gains 1SP.",
     "Each team member gains 2SP.",
+    "All team members refill their SP!",
     "Each team member can have a piece of fruit for a snack.",
     "The team can take a 5 minute fun break.",
     "The team can take a 5 minute reading break.",
